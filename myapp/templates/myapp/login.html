@@ -1,0 +1,13 @@
+{%extends 'myapp/base.html'%}
+{%load crispy_forms_tags%}
+{%block content%}
+<div class="jumbotron">
+  <h2>Login</h2>
+<form method="POST" action="" enctype='multipart/form-data'>
+{%csrf_token%}
+{{form|crispy}}
+<button class="btn btn-outline-primary">Login</button>
+<a href=""><small>Forgot Password?</small></a>
+  </form>
+  </div>
+{%endblock%}

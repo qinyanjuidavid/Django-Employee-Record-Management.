@@ -1,0 +1,11 @@
+{%extends 'myapp/base.html'%}
+{%block content%}
+<div class="jumbotron">
+<strong>
+You have successfully been logout,
+<br>
+<h3>Welcome Back Soon!!!</h3>
+<marquee><a href="{%url 'myapp:login'%}">Login Page</a></marquee>
+  </strong>
+  </div>
+{%endblock%}

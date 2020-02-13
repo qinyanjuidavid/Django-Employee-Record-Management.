@@ -1,0 +1,34 @@
+{%extends 'myapp/base.html'%}
+{%block content%}
+<div class="jumbotron">
+  <div class="row">
+    <legend class="p-2" style=color:maroon; align=center>{{employee.full_name}} Information.</legend>
+    <hr>
+    <div class="col-sm-5">
+<img src="{{employee.image.url}}" height="450" alt="img">
+</div>
+<div class="col-sm-7">
+  <div class="name p-3">
+<strong>Full Name: </strong>{{employee.full_name}}
+</div>
+<div class="code p-3">
+<strong>Emp Code:</strong>{{employee.emp_code}}
+</div>
+<div class="position p-3">
+<strong>Position: </strong>{{employee.position}}
+</div>
+<div class="education p-3">
+<strong>Level of Education: </strong>{{employee.education}}
+</div>
+<div class="mobile p-3">
+<strong>Contact: </strong>{{employee.mobile}}
+</div>
+<div class="about m-3 p-2">
+<strong>{{employee.full_name}} Bio's:</strong>
+<br>
+{{employee.about}}
+  </div>
+  </div>
+  </div>
+  </div>
+{%endblock%}
