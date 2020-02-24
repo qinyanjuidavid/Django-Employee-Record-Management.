@@ -1,2 +1,2 @@
 # Employee-Record-Management-System 
-This is just a simple employee record management system.
+The project does not have a virtual environment, Thus, You can just clone it and use it for your learning.
